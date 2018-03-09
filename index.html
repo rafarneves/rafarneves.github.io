@@ -2,14 +2,38 @@
 <html>
 <head>
 <title>index</title>
+<style>
+.vertical-menu {
+    width: 200px;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+</style>
 </head>
 <body style = "background-color:yellow;">
 
-<h1>Rafael Arruda das Neves</h1>
-<img src="dsi/projeto1/Imagens/Foto.jpg" width="180" height="220">
-<p><a href="dsi/projeto1/Profissional.html">Profissional</a></p>
-<p><a href="dsi/projeto1/Links.html">Links</a></p>
-<p><a href="dsi/projeto1/Contato.html">Contato</a></p>
-<p><a href="dsi/projeto1/Lazer.html">Lazer</a></p>
+<h1 style="text-align:center;">Rafael Arruda das Neves</h1>
+<div align="center"><img src="dsi/projeto1/Imagens/Foto.jpg" width="180" height="220"></div>
+<div class="vertical-menu">
+  <a href="dsi/projeto1/Profissional.html">Profissional</a>
+  <a href="dsi/projeto1/Links.html">Links</a>
+  <a href="dsi/projeto1/Contato.html">Contato</a>
+  <a href="dsi/projeto1/Lazer.html">Lazer</a>
+</div>
 </body>
 </html>
