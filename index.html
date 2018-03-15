@@ -1,39 +1,159 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>index</title>
+<title>Rafael Neves</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.vertical-menu {
-    width: 200px;
-}
-
-.vertical-menu a {
-    background-color: #eee;
-    color: black;
-    display: block;
-    padding: 12px;
-    text-decoration: none;
-}
-
-.vertical-menu a:hover {
-    background-color: #ccc;
-}
-
-.vertical-menu a.active {
-    background-color: #4CAF50;
-    color: white;
-}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 </style>
-</head>
-<body style = "background-color:yellow;">
+<body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<h1 style="text-align:center;">Rafael Arruda das Neves</h1>
-<div align="center"><img src="dsi/projeto1/Imagens/Foto.jpg" width="180" height="220"></div>
-<div class="vertical-menu">
-  <a href="dsi/projeto1/Profissional.html">Profissional</a>
-  <a href="dsi/projeto1/Links.html">Links</a>
-  <a href="dsi/projeto1/Contato.html">Contato</a>
-  <a href="dsi/projeto1/Lazer.html">Lazer</a>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="Imagens/eu.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Rafael Arruda</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-user fa-fw w3-margin-right "></i>SOBRE</a> 
+    <a href="#media" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>MEDIA</a> 
+    <a href="#contato" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTATO</a>
+	<a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-link fa-fw w3-margin-right"></i>LINKS</a>
+  </div>
+  <div class="w3-panel w3-large">
+		<h4><b>Redes Sociais:</b></h4>
+    <a href = "https://www.facebook.com/rafarneves"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href = "https://www.instagram.com/rafaarneves"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=5584996064040"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !Conteudo! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="sobre">
+    <div class="w3-container w3-center">
+    <h1><b>Rafael Arruda das Neves</b></h1>
+	<img src="Imagens/eu.jpg" alt="boy" class="w3-image" width="40%" height="40%">
+    </div>
+  </header>
+  <!-- Sobre mim -->
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>SOBRE</b></h4>
+    <p>Olá, tenho 24 anos e atualmente estou cursando Ciências e Tecnologia na UFRN. Atualmente não trabalho, apenas estudo e sou promoter de festas.</p>
+	<p>Entre meus hobbies estão a música(violão), além de jogos de computador e Xbox. Procuro entreter meu tempo com livros, comida(o principal) e dormir(melhor coisa não tem).</p>
+    <hr>
+    
+    <h4>Habilidades</h4>
+    <!-- Progress bars / Skills -->
+    <p>Dormir</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:100%">100%</div>
+    </div>
+    <p>Esportes</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+    </div>
+    <p>Photoshop</p>
+    <div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:45%">45%</div>
+    </div>
+	<p>Informática</p>
+	<div class="w3-grey">
+      <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90%</div>
+    </div>
+    <hr>
+	
+  <!-- Videos -->
+  <div class="w3-row-padding w3-padding-16" id="media">
+  <h4><b>VIDEOS</b></h4>
+    <div class="w3-col m6">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ALZHF5UqnU4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+    
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contato"><b>Contato</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>rafaarneves@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Natal, RN</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>(84)99606-4040</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey" id="links">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h2 color="white-space"><b>Contato dos Alunos</b></h2><br>
+			<a href="https://aquilesburlamaqui.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Aquiles Burlamaqui</h5></a>
+			<a href="https://amadeupb36.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Amadeu</h5></a>
+			<a href="https://ana-beatriz-marinho.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Ana Beatriz Marinho</h5></a>
+			<a href="https://andrielsonsantos.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Andrielson Santos</h5></a>
+			<a href="https://arthzzz.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Arthur Martins</h5></a>
+			<a href="https://carlosmirandaf.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Carlos Miranda</h5></a>
+			<a href="https://falemao.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Felipe G. Ren</h5></a>
+			<a href="https://glauberc.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Glauber Carvalho</h5></a>
+			<a href="https://helderdantas.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Helder Dantas</h5></a>
+			<a href="https://hiltonjr.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Hilton Junior</h5></a>
+			<a href="https://jeffersondenilson.github.io" style="text-decoration:none"><h5 class="w3-hover-opacity">Jefferson Denilson</h5></a>
+			<a href="https://joaomcr.github.io" style="text-decoration:none"><h5 class="w3-hover-opacity">João Manoel</h5></a>
+			<a href="https://jaovv.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">João Vtor Tomaz de Souza Duarte</h5></a>
+			<a href="https://juliobandeira97.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Julio Bandeira</h5></a>
+			<a href="https://lariskelmer.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Larissa Kelmer</h5></a>
+			<a href="https://lucasvn.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Lucas</h5></a>
+			<a href="https://lucasiqueira95.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Lucas Siqueira</h5></a>
+			<a href="https://magnusbrigido.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Magnus Freire</h5></a>
+			<a href="https://marcelofilgueira.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Marcelo Filgueira</h5></a>
+			<a href="https://mauriciothiago.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Maurício Thiago</h5></a>
+			<a href="https://mofreitas.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Mateus Freitas</h5></a>
+			<a href="https://samcost.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Samantha Costa</h5></a>
+			<a href="https://sergiopiresbarra.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Sergio Pires</h5></a>
+			<a href="https://victorkaillo.github.io/" style="text-decoration:none"><h5 class="w3-hover-opacity">Victor Kaillo</h5></a>
+			
+			
+    </div>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by Rafael Neves</a></div>
+
+<!-- End page content -->
 </div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
 </body>
 </html>
